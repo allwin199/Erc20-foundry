@@ -2,8 +2,7 @@
 pragma solidity 0.8.20;
 
 contract ManualToken {
-
-    event Transfer(address indexed _from, address indexed _to, uint256 _value)
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     mapping(address user => uint256 amount) private s_balances;
     // holding tokens in ERC20 -> just mean we have some balance in some mapping
